@@ -31,7 +31,7 @@ li.minus {
 
 .history>ul {margin-left: 68px;}
 
-ul {}
+
 
 .history>ul>li {
     margin-left: 25px;
@@ -45,25 +45,27 @@ li.plus {
     padding: 10px;
 }
 
-ul#list {}
+
     </style>
 </head>
 <body>
     <div class="balance">
         <h4>YOUR BALANCE</h4>
+       <div id="total">
         <span>$0.00</span>
+       </div>
     </div>
     <div class="inc-exp">
         <div class="money-plus">
         <h4>INCOME</h4>
-        <span>+$0.00</span>
+        <span id="income_money">+$0.00</span>
         </div>
         <div class="money-minus">
          <h4>EXPENSE</h4>
-        <span>-$0.00</span>
+         <span id="expense_money">-$0.00</span>
         </div>
     </div>
-    <div id="history">
+    <div >
         <h3>HISTORY</h3>
         <ul id="list"class="list">
             <!-- <li>
