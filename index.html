@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inc-exp {
+    box-shadow: 0px 0px 11px black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.balance {
+    text-align: center;
+    background: yellow;
+    box-shadow: 0px 0px 11px black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+li.minus {
+    background: orange;
+    padding: 10px;
+    color: white;
+}
+.history {
+    background: red;
+    padding: 1px;
+}
+
+.history>ul {margin-left: 68px;}
+
+ul {}
+
+.history>ul>li {
+    margin-left: 25px;
+}
+
+.transaction {
+    text-align: center;
+}
+li.plus {
+    background: greenyellow;
+    padding: 10px;
+}
+
+ul#list {}
+    </style>
+</head>
+<body>
+    <div class="balance">
+        <h4>YOUR BALANCE</h4>
+        <span>$0.00</span>
+    </div>
+    <div class="inc-exp">
+        <div class="money-plus">
+        <h4>INCOME</h4>
+        <span>+$0.00</span>
+        </div>
+        <div class="money-minus">
+         <h4>EXPENSE</h4>
+        <span>-$0.00</span>
+        </div>
+    </div>
+    <div id="history">
+        <h3>HISTORY</h3>
+        <ul id="list"class="list">
+            <!-- <li>
+                <span>cash:$0.00</span><button class="delete-btn">x</button>
+            </li> -->
+        </ul>
+    </div>
+    <div class="transaction">
+        <h3>Add New Transaction</h3>
+        <form id="form">
+        <label>Text</label>
+        <input type="text" id="text" placeholder="Enter text.." value=""><br>
+
+        <label>Amount</label>
+        <input type="number" id="amount" placeholder="Enter Amount.." value=""><br>
+
+        <button type="submit">All Transaction</button>
+        </form>
+
+    </div>  
+
+<script src="script.js"></script>
+
+</body>
+</html>
